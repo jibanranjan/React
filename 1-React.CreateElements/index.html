@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+    <title>Document</title>
+</head>
+<body>
+
+    <div id="root"></div>
+    
+
+<script>
+
+    let topdiv = React.createElement('div',null,[
+                                                  React.createElement('h1', null, "Topics Covered"),
+                                                  React.createElement('P', null, "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.")
+
+    ])
+
+    let frstpara = React.createElement('div', null,[
+                                                     React.createElement('a', {href:" ", style:{color:"rgb(70,138,200)"}}, "getting-started with the web"),
+                                                     React.createElement('p', null, "Provides a practical introduction to web development for complete beginners.")
+
+
+                             
+    ])
+
+
+    let scndpara = React.createElement('div', null, [
+                                                      React.createElement('a', {href:" " , style:{color:"rgb(70,138,200)"}}, "HTML-structuring the web"),
+                                                      React.createElement('p', null, "HTML is the language that we use to structure the different parts of our content and define what their meaning or purpose is. This topic teaches HTML in detail.")
+    ])
+
+    let thrdpara = React.createElement('div', null, [
+                                                    React.createElement('a', {href: " ", style:{color:"rgb(70,138,200)"}}, "CSS- Styling the web"),
+                                                    React.createElement('p', null, " CSS is the language that we use to control our web content's style and layout, as well as adding behavior like animation. This topic provides comprehensive coverage of CSS.")
+    ])
+
+
+
+
+
+
+
+
+
+    let alldiv = React.createElement('div', {style:{padding:"2%"}}, [topdiv, frstpara, scndpara, thrdpara])
+
+
+
+
+
+
+
+
+    ReactDOM.render(alldiv, document.getElementById('root'))
+
+
+
+
+
+
+
+
+</script>
+
+
+</body>
+</html>
