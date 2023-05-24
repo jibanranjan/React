@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+    <title>Document</title>
+</head>
+<body>
+
+    <div id="root"></div>
+
+    <script>
+
+        let dp = React.createElement('img', {src:"pic.jpg", style:{position:"relative", height:"110px", width:"110px", borderRadius:"50%", marginLeft:"130px", marginTop:"30px"}}, null)
+
+        let dot = React.createElement('div', {style:{position:"absolute", left:"658px" ,right:"0",top:"140px" ,height:"16px", width:"16px", backgroundColor:"rgb(68,255,0)", borderRadius:"50%", border:"2px solid white" }} ,null)
+
+        
+        let scnddiv = React.createElement('div', null , [   
+                                                         React.createElement('h3',{style:{marginLeft:"100px", color:"rgb(105,105,105)"}}, "Jibanranjan Debata"),
+                                                         React.createElement('p',{style:{marginLeft:"70px", color:"rgb(128,128,128)"}}, "i enjoy drinking cup of tea everyday" )
+        ])
+
+
+
+        let thrddiv = React.createElement('div', {style:{display:"flex", padding:"5%",justifyContent:"space-between"}}, [
+                                                        React.createElement('div', null, [
+                                                            React.createElement('h3', {style:{marginLeft:"10px", color:"rgb(155, 69, 228)"}}, "172"),
+                                                            React.createElement('p', {style:{color:"rgb(128,128,128)"}}, "POSTS")
+                                                        ]),
+                                                        React.createElement('div', null, [
+                                                            React.createElement('h3',  {style:{marginLeft:"25px",color:"rgb(155, 69, 228)" }}, "6670"),
+                                                            React.createElement('p', {style:{color:"rgb(128,128,128)"}}, "FOLLOWERS")
+                                                        ]),
+                                                        React.createElement('div', null, [
+                                                            React.createElement('h3',  {style:{marginLeft:"25px", color:"rgb(155, 69, 228)"}}, "870"),
+                                                            React.createElement('p', {style:{color:"rgb(128,128,128)"}}, "FOLLOWING")
+                                                        ])
+
+        ])
+
+
+
+
+
+        let btndiv = React.createElement('div', {style:{display:"flex", padding:"2%", marginLeft:"25px",gap:"50px"  }}, [
+                                                        React.createElement('button', {style:{       cursor:"pointer",borderRadius:"12px",padding:"2%",width:"120px",height:"39px",color:"white",border:"none",backgroundColor:"rgb(155, 69, 228)"}}, "FOLLOW"),
+                                                        React.createElement('button', {style:{       cursor:"pointer",borderRadius:"12px",padding:"2%",width:"120px",height:"39px",color:"white",border:"none",backgroundColor:"rgb(225, 58, 157)"}}, "MESSAGE")
+                                                        
+        ])
+
+
+
+
+        let alldiv = React.createElement('div', {style:{height:"460px", width:"400px", boxShadow:"0 0  10px black", marginTop:"100px", marginLeft:"430px"}}, [dp, dot, scnddiv, thrddiv, btndiv])
+        
+        ReactDOM.render(alldiv, document.getElementById("root"))
+
+
+    </script>
+    
+</body>
+</html>
