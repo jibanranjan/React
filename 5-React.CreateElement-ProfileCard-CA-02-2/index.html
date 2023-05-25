@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <div id="root"></div>
+    <script>
+
+
+
+            
+             let dpimg = React.createElement('img', {src:"dp.jpg", style:{height:"250px",width:"300px",borderRadius:"10px 10px 0 0 ", position:"relative"}},null)
+
+             let symbol = React.createElement('div', {style:{display:"flex",position:"absolute",top:"150px",marginLeft:"10px",gap:"250px",justifyContent:"space-between",}}, [
+                                                          React.createElement('div', {style:{height:"15px", cursor:"pointer",marginTop:"10px",width:"22px", padding:"2%", color:"white",backgroundColor:"rgb(227, 61, 111)", borderRadius:"6px"}},"+"),
+
+                                                          React.createElement('div',{style:{color:"white", marginTop:"10px"}},[
+                                                                                         React.createElement("li", {style:{height:"10px",margin:"0", padding:"0", cursor:"pointer",}}, null),
+                                                                                         React.createElement("li", {style:{height:"10px",margin:"0", padding:"0", }}, null),
+                                                                                         React.createElement("li", {style:{height:"10px",margin:"0", padding:"0",cursor:"pointer"}}, null)])
+                                                                    ])
+
+
+                            let frstdiv = React.createElement('div', null ,[dpimg, symbol])
+
+
+
+
+
+                            let name = React.createElement('h2',null, "jibanranjan debata" )
+
+                            let tag = React.createElement('p', {style:{marginTop:"-14px", marginLeft:"30px", color:"rgb(169,169,169)"}}, "Front-end Developer")
+
+                          let midiv = React.createElement('div', {style:{marginTop:"-12px",marginLeft:"48px"}}, [name, tag])  
+
+
+
+                          let shootdiv = React.createElement('div', null, [
+                                                                            React.createElement('h3', null,"37"),
+                                                                            React.createElement('h6', {style:{marginTop:"-13px", marginLeft:"-5px",color:"rgb(169,169,169)"}},"Shoot"),
+
+                          ])
+
+
+
+
+                          let Followingdiv = React.createElement('div', null, [
+                                                                            React.createElement('h3', null,"470"),
+                                                                            React.createElement('h6', {style:{marginTop:"-13px", marginLeft:"-5px",color:"rgb(169,169,169)"}},"Following"),
+
+                          ])
+
+
+                          let Followersdiv = React.createElement('div', null, [
+                                                                            React.createElement('h3', null,"6470"),
+                                                                            React.createElement('h6', {style:{marginTop:"-13px", marginLeft:"-5px",color:"rgb(169,169,169)"}},"Followers"),
+
+                          ])
+
+
+
+                          let enddiv = React.createElement('div', {style:{display:"flex", justifyContent:"space-around"}}, [shootdiv, Followingdiv, Followersdiv])
+
+
+
+
+
+
+
+
+
+
+
+
+            let alldiv = React.createElement('div', {style:{height:"400px", width:"300px", marginTop:"140px",marginLeft:"480px", borderRadius:"10px" ,boxShadow:"0 0 10px black"}}, [frstdiv, midiv, enddiv])
+
+
+ReactDOM.render(alldiv, document.getElementById("root"))
+
+    </script>
+</body>
+</html>
